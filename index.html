@@ -28,10 +28,9 @@
     .avatar {
       width: 112px; height: 112px; flex: none;
       border-radius: 50%;
-      background: linear-gradient(135deg, #3b6fd8, #6a4bc4);
-      color: #fff; font-size: 40px; font-weight: 600;
-      display: flex; align-items: center; justify-content: center;
-      letter-spacing: 1px;
+      object-fit: cover;
+      border: 3px solid #fff;
+      box-shadow: 0 4px 14px rgba(20, 30, 60, .18);
     }
     h1 { font-size: 34px; font-weight: 300; }
     .role { font-size: 20px; color: #6a4bc4; margin-top: 6px; }
@@ -61,7 +60,7 @@
 <body>
   <main class="card">
     <div class="head">
-      <div class="avatar">ДЧ</div>
+      <img class="avatar" src="photo.jpg" alt="Данило Червинський">
       <div>
         <h1>Данило Червинський</h1>
         <div class="role">студент-програміст</div>
