@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Данило Червинський — сайт-візитка</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: #eef1f5;
+      color: #2b2f36;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+    .card {
+      background: #fff;
+      max-width: 760px;
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(20, 30, 60, .10);
+      padding: 48px 56px;
+    }
+    .head { display: flex; align-items: center; gap: 28px; }
+    .avatar {
+      width: 112px; height: 112px; flex: none;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b6fd8, #6a4bc4);
+      color: #fff; font-size: 40px; font-weight: 600;
+      display: flex; align-items: center; justify-content: center;
+      letter-spacing: 1px;
+    }
+    h1 { font-size: 34px; font-weight: 300; }
+    .role { font-size: 20px; color: #6a4bc4; margin-top: 6px; }
+    hr { border: none; border-top: 1px solid #e3e6ec; margin: 28px 0; }
+    p { line-height: 1.65; margin-bottom: 14px; }
+    h2 { font-size: 18px; font-weight: 600; margin: 22px 0 12px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+    .skills li {
+      background: #f1f3f8; border-radius: 20px;
+      padding: 6px 14px; font-size: 14px;
+    }
+    .contacts {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px;
+      list-style: none; margin-top: 6px;
+    }
+    .contacts span { color: #8a909c; margin-right: 6px; }
+    a { color: #3b6fd8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 28px; font-size: 13px; color: #9aa0ab; text-align: center; }
+    @media (max-width: 560px) {
+      .card { padding: 32px 24px; }
+      .head { flex-direction: column; text-align: center; }
+      .contacts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="head">
+      <div class="avatar">ДЧ</div>
+      <div>
+        <h1>Данило Червинський</h1>
+        <div class="role">студент-програміст</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <p>Привіт! Мене звати Данило, я студент групи 1ПР1 факультету інформаційних технологій
+      та дизайну Херсонського національного технічного університету (кафедра програмних
+      засобів і технологій).</p>
+    <p>Займаюся веб-розробкою: верстаю сайти на HTML та CSS, пишу інтерактивні сторінки на
+      JavaScript і зберігаю свої проєкти на GitHub. Цей сайт створено й розміщено безкоштовно
+      за допомогою GitHub Pages у межах лабораторної роботи 8.2.</p>
+
+    <h2>Навички</h2>
+    <ul class="skills">
+      <li>HTML5</li><li>CSS3 / SCSS</li><li>JavaScript</li>
+      <li>Git та GitHub</li><li>GitHub Pages</li><li>Адаптивна верстка</li>
+    </ul>
+
+    <h2>Контакти</h2>
+    <ul class="contacts">
+      <li><span>✉</span><a href="mailto:danik.chervinskiy@gmail.com">danik.chervinskiy@gmail.com</a></li>
+      <li><span>⌂</span><a href="https://github.com/DanikChervinskiy">github.com/DanikChervinskiy</a></li>
+      <li><span>🎓</span>ХНТУ, група 1ПР1</li>
+      <li><span>📁</span><a href="https://github.com/DanikChervinskiy/My-repository">My-repository</a></li>
+    </ul>
+
+    <footer>© 2026 Данило Червинський · Сайт розміщено на GitHub Pages</footer>
+  </main>
+</body>
+</html>
